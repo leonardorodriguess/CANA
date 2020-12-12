@@ -40,9 +40,9 @@ void quicksort(int *A, int p, int r){
   int q;
 
   if(p < r){
-    q = particione(A,p,r);
+    q = particione(A, p, r);
     quicksort(A, p, q - 1);
-    quicksort(A, p, q - 1);
+    quicksort(A, q + 1, r);
   }
 }
 
