@@ -5,8 +5,8 @@ void mergesort(int *A, int p, int r);
 
 int main (){
   int A[] = {1, 2, 5, 8, 6, 3, 0, 5, 1, 4}, i,
-  //n = sizeof (A) / sizeof(int), i;
-  n = 10;
+  n = sizeof (A) / sizeof(int), i;
+  //n = 10;
 
   mergesort(A, 0, n-1);
 
