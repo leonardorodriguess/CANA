@@ -7,9 +7,12 @@ void mergesort(int *A, int p, int r);
 void intercala(int *A, int p, int q, int r);
 
 int main (){
-  int A[] = {1, 2, 5, 8, 6, 3, 0, 5, 1, 4}, i,
-  n = sizeof (A) / sizeof(int);
-  //n = 10;
+  int *A, i, n = 10;
+
+  A = (int *) calloc(n, sizeof(int));
+
+  for (i = 0; i < n; i++)
+    A[i] = rand() % n + 1;
 
   mergesort(A, 0, n - 1);
 
@@ -54,3 +57,4 @@ void mergesort(int *A, int p, int r) {
     intercala(A, p, q, r);
   }
 }
+
