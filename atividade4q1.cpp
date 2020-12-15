@@ -8,7 +8,7 @@ void intercala(int *A, int p, int q, int r);
 bool soma(int *A, int n, int x);
 
 int main (){
-  int *A, i, n = 10, x;
+  int *A, i, n = 100000, x;
 
   A = (int *) calloc(n, sizeof(int));
 
