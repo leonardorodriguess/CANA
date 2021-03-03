@@ -6,7 +6,7 @@ using namespace std;
 void shellsort(int *A, int p, int r);
 
 int main (){
-  int *A, i, n = 5;
+  int *A, i, n = 10;
 
   A = (int *) calloc(n, sizeof(int));
 
@@ -22,20 +22,23 @@ int main (){
 }
 
 void shellsort (int *A, int p, int r){
-  int i, j, h = 0, aux = 1;
+  int i, j, h = p, aux = 1;
+
   
-  while (h < r)
+  while (h < r){
     h = 3 * h + 1;
+    //printf("loop1");
+  }
 
   while (h > 1){
     h = h / 3;
-    for (i = h; i < p; i++){
+    for (i = h; i < r; i++){
       aux = A[i];
       j = i - h;
 
       while (j >= 0 && aux < A[j]){
         A[j + h] = A[j];
-        j -= h;
+        j = j - h;
 
       }
 
@@ -43,6 +46,4 @@ void shellsort (int *A, int p, int r){
     }
   }
 
-  for (i = 0; i < p; i++)
-    printf(" %d", A[i]);
 }

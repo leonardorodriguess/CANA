@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
+
 int main(){
 
 int valor,i,p = 0,*V;
@@ -26,6 +27,6 @@ int valor,i,p = 0,*V;
       V[p]= j;                                          //n-2
       p++;                                              //n-2
   }
-                                                        //complexidade de tempo 4n²-13n+6
-  return 0;                                             //complexidade de espaço O(n)
+                                                        //complexidade de tempo 4nï¿½-13n+6
+  return 0;                                             //complexidade de espaï¿½o O(n)
 }

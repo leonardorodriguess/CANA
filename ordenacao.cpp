@@ -34,9 +34,9 @@ int main() {
 
   ti = clock();
 
-  bubblesort(V, 0, n-1);
+  //bubblesort(V, 0, n-1);
   //SelectionSort (V, 0, n-1);
-  //InsertionSort (V, 0, n-1);
+  InsertionSort (V, 0, n-1);
 
   tf = clock();
   printf("Tempo: %f\n", (tf - ti)/1000);
